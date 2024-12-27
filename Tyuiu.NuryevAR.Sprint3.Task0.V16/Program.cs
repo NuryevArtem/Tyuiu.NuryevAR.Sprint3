@@ -28,7 +28,7 @@ namespace Tyuiu.NuryevAR.Sprint3.Task0.V16
 
             int value = 5;
             int startValue = 1;
-            int stopValue = 5;
+            int stopValue = 6;
             Console.WriteLine("X:" + value);
             Console.WriteLine("старт шага:" + startValue);
             Console.WriteLine("конец шага:" + stopValue);

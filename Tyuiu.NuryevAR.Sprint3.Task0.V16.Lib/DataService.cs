@@ -6,17 +6,15 @@ namespace Tyuiu.NuryevAR.Sprint3.Task0.V16.Lib
     {
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
-            int i = 1;
-            int x = 5;
-            double multSeries = 1;
-            while (startValue <= stopValue)
+            double MulSeries0 = 0;
+            double MulSeries1 = 1;
+            double i;
+            for (i = startValue; i <= stopValue; i++)
             {
-                multSeries = multSeries * Math.Pow((300 / (i + Math.Pow(x, i))), i);
-                startValue++;
-                i++;
-                Console.WriteLine("i " + i);
+                MulSeries0 = Math.Pow(value, i) + (1 / (i + 1));
+                MulSeries1 *= MulSeries0;
             }
-            return Math.Round(multSeries, 3);
+            return Math.Round(MulSeries1, 3);
         }
     }
 }
